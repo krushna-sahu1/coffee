@@ -1,0 +1,292 @@
+export const categories = [
+  { id: "hot-coffee", name: "Hot Coffee", icon: "cafe" },
+  { id: "iced-coffee", name: "Iced Coffee", icon: "snow" },
+  { id: "espresso", name: "Espresso", icon: "cafe-outline" },
+  { id: "frappuccino", name: "Frappuccino", icon: "ice-cream" },
+  { id: "tea", name: "Tea", icon: "leaf" },
+  { id: "pastries", name: "Pastries", icon: "fast-food" },
+];
+
+export const products = [
+  // Hot Coffee
+  {
+    id: "1",
+    name: "Classic Latte",
+    description:
+      "Rich espresso with steamed milk and a light layer of foam. A timeless favorite.",
+    price: 4.5,
+    category: "hot-coffee",
+    image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400",
+    rating: 4.8,
+    reviews: 234,
+    calories: 190,
+    isPopular: true,
+    isFeatured: true,
+  },
+  {
+    id: "2",
+    name: "Cappuccino",
+    description:
+      "Perfect balance of espresso, steamed milk, and velvety foam topped with cocoa.",
+    price: 4.25,
+    category: "hot-coffee",
+    image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400",
+    rating: 4.7,
+    reviews: 189,
+    calories: 120,
+    isPopular: true,
+    isFeatured: false,
+  },
+  {
+    id: "3",
+    name: "Caramel Macchiato",
+    description: "Vanilla-flavored drink with espresso and caramel drizzle.",
+    price: 5.25,
+    category: "hot-coffee",
+    image: "https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=400",
+    rating: 4.9,
+    reviews: 312,
+    calories: 250,
+    isPopular: true,
+    isFeatured: true,
+  },
+  {
+    id: "4",
+    name: "Mocha",
+    description: "Espresso with chocolate, steamed milk, and whipped cream.",
+    price: 5.0,
+    category: "hot-coffee",
+    image: "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400",
+    rating: 4.6,
+    reviews: 156,
+    calories: 290,
+    isPopular: false,
+    isFeatured: false,
+  },
+  // Iced Coffee
+  {
+    id: "5",
+    name: "Iced Americano",
+    description:
+      "Espresso shots topped with cold water and ice for a refreshing drink.",
+    price: 3.75,
+    category: "iced-coffee",
+    image: "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=400",
+    rating: 4.5,
+    reviews: 98,
+    calories: 15,
+    isPopular: true,
+    isFeatured: false,
+  },
+  {
+    id: "6",
+    name: "Cold Brew",
+    description: "Slow-steeped for 20 hours, super smooth and naturally sweet.",
+    price: 4.5,
+    category: "iced-coffee",
+    image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400",
+    rating: 4.8,
+    reviews: 267,
+    calories: 5,
+    isPopular: true,
+    isFeatured: true,
+  },
+  {
+    id: "7",
+    name: "Iced Vanilla Latte",
+    description: "Chilled espresso with vanilla syrup and cold milk over ice.",
+    price: 5.0,
+    category: "iced-coffee",
+    image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=400",
+    rating: 4.7,
+    reviews: 145,
+    calories: 180,
+    isPopular: false,
+    isFeatured: false,
+  },
+  // Espresso
+  {
+    id: "8",
+    name: "Espresso Shot",
+    description:
+      "Pure, intense espresso. The foundation of all great coffee drinks.",
+    price: 2.5,
+    category: "espresso",
+    image: "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=400",
+    rating: 4.9,
+    reviews: 423,
+    calories: 5,
+    isPopular: true,
+    isFeatured: false,
+  },
+  {
+    id: "9",
+    name: "Double Espresso",
+    description: "Two shots of our signature espresso for an extra kick.",
+    price: 3.5,
+    category: "espresso",
+    image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400",
+    rating: 4.8,
+    reviews: 287,
+    calories: 10,
+    isPopular: true,
+    isFeatured: false,
+  },
+  // Frappuccino
+  {
+    id: "10",
+    name: "Mocha Frappuccino",
+    description:
+      "Blended coffee, milk, ice, and mocha sauce topped with whipped cream.",
+    price: 5.75,
+    category: "frappuccino",
+    image: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400",
+    rating: 4.7,
+    reviews: 198,
+    calories: 370,
+    isPopular: true,
+    isFeatured: true,
+  },
+  {
+    id: "11",
+    name: "Caramel Frappuccino",
+    description:
+      "Caramel syrup blended with coffee, milk and ice. Pure indulgence.",
+    price: 5.75,
+    category: "frappuccino",
+    image: "https://images.unsplash.com/photo-1592663527144-d9a8306b1c96?w=400",
+    rating: 4.8,
+    reviews: 234,
+    calories: 380,
+    isPopular: true,
+    isFeatured: false,
+  },
+  // Tea
+  {
+    id: "12",
+    name: "Chai Latte",
+    description:
+      "Black tea infused with cinnamon, clove and other spices with steamed milk.",
+    price: 4.25,
+    category: "tea",
+    image: "https://images.unsplash.com/photo-1557006021-b85faa2bc5e2?w=400",
+    rating: 4.6,
+    reviews: 167,
+    calories: 240,
+    isPopular: true,
+    isFeatured: false,
+  },
+  {
+    id: "13",
+    name: "Matcha Green Tea Latte",
+    description: "Smooth, earthy matcha green tea with steamed milk.",
+    price: 5.0,
+    category: "tea",
+    image: "https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=400",
+    rating: 4.7,
+    reviews: 145,
+    calories: 200,
+    isPopular: false,
+    isFeatured: true,
+  },
+  // Pastries
+  {
+    id: "14",
+    name: "Butter Croissant",
+    description: "Flaky, golden pastry made with pure French butter.",
+    price: 3.5,
+    category: "pastries",
+    image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400",
+    rating: 4.9,
+    reviews: 312,
+    calories: 260,
+    isPopular: true,
+    isFeatured: false,
+  },
+  {
+    id: "15",
+    name: "Chocolate Muffin",
+    description: "Rich chocolate muffin with chocolate chips throughout.",
+    price: 3.25,
+    category: "pastries",
+    image: "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=400",
+    rating: 4.5,
+    reviews: 89,
+    calories: 340,
+    isPopular: false,
+    isFeatured: false,
+  },
+];
+
+export const addons = [
+  { id: "extra-shot", name: "Extra Shot", price: 0.75 },
+  { id: "oat-milk", name: "Oat Milk", price: 0.6 },
+  { id: "almond-milk", name: "Almond Milk", price: 0.6 },
+  { id: "vanilla-syrup", name: "Vanilla Syrup", price: 0.5 },
+  { id: "caramel-syrup", name: "Caramel Syrup", price: 0.5 },
+  { id: "hazelnut-syrup", name: "Hazelnut Syrup", price: 0.5 },
+  { id: "whipped-cream", name: "Whipped Cream", price: 0.5 },
+  { id: "chocolate-drizzle", name: "Chocolate Drizzle", price: 0.5 },
+];
+
+export const sizes = [
+  { id: "small", name: "Small", label: "12 oz", priceModifier: 0 },
+  { id: "medium", name: "Medium", label: "16 oz", priceModifier: 0.5 },
+  { id: "large", name: "Large", label: "20 oz", priceModifier: 1.0 },
+];
+
+export const promotions = [
+  {
+    id: "1",
+    title: "Happy Hour",
+    description: "50% off all Frappuccinos, 3-5 PM daily",
+    image: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600",
+    backgroundColor: "#6F4E37",
+    code: "HAPPY50",
+  },
+  {
+    id: "2",
+    title: "New Member Bonus",
+    description: "Get 100 bonus points on your first order",
+    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600",
+    backgroundColor: "#8B5A2B",
+    code: "WELCOME100",
+  },
+  {
+    id: "3",
+    title: "Free Pastry Friday",
+    description: "Free pastry with any large drink purchase",
+    image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600",
+    backgroundColor: "#5C4033",
+    code: "FREEPASTRY",
+  },
+];
+
+export const rewards = [
+  { id: "1", name: "Free Size Upgrade", points: 50, icon: "arrow-up-circle" },
+  { id: "2", name: "Free Extra Shot", points: 75, icon: "add-circle" },
+  { id: "3", name: "Free Pastry", points: 150, icon: "fast-food" },
+  { id: "4", name: "Free Any Drink", points: 300, icon: "cafe" },
+  { id: "5", name: "$10 Store Credit", points: 500, icon: "cash" },
+];
+
+export const rewardTiers = [
+  { name: "Bronze", minPoints: 0, multiplier: 1, color: "#CD7F32" },
+  { name: "Silver", minPoints: 200, multiplier: 1.25, color: "#C0C0C0" },
+  { name: "Gold", minPoints: 500, multiplier: 1.5, color: "#FFD700" },
+  { name: "Platinum", minPoints: 1000, multiplier: 2, color: "#E5E4E2" },
+];
+
+export const paymentMethods = [
+  { id: "apple-pay", name: "Apple Pay", icon: "logo-apple" },
+  { id: "google-pay", name: "Google Pay", icon: "logo-google" },
+  { id: "card", name: "Credit Card", icon: "card" },
+  { id: "rewards", name: "Use Rewards", icon: "gift" },
+];
+
+export const orderStatuses = [
+  { id: "confirmed", label: "Order Confirmed", icon: "checkmark-circle" },
+  { id: "preparing", label: "Preparing", icon: "cafe" },
+  { id: "ready", label: "Ready for Pickup", icon: "bag-check" },
+  { id: "completed", label: "Completed", icon: "checkmark-done-circle" },
+];

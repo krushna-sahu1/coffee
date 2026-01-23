@@ -1,0 +1,41 @@
+export const colors = {
+  primary: {
+    50: "#FDF8F3",
+    100: "#F5E6D3",
+    200: "#E6CBA8",
+    300: "#D4A574",
+    400: "#C4864C",
+    500: "#8B5A2B",
+    600: "#6F4E37",
+    700: "#5C4033",
+    800: "#3E2723",
+    900: "#1C1210",
+  },
+  cream: {
+    50: "#FFFEF7",
+    100: "#FFFDD0",
+    200: "#FFF8DC",
+  },
+  espresso: "#3C1810",
+  caramel: "#FFD59A",
+  mocha: "#967259",
+  white: "#FFFFFF",
+  black: "#000000",
+  gray: {
+    50: "#F9FAFB",
+    100: "#F3F4F6",
+    200: "#E5E7EB",
+    300: "#D1D5DB",
+    400: "#9CA3AF",
+    500: "#6B7280",
+    600: "#4B5563",
+    700: "#374151",
+    800: "#1F2937",
+    900: "#111827",
+  },
+  success: "#10B981",
+  warning: "#F59E0B",
+  error: "#EF4444",
+};
+
+export default colors;
