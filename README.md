@@ -1,12 +1,14 @@
 # Coffee
 
-Clean, modern mobile coffee ordering app built with Expo, React Native, Expo Router, NativeWind, and Zustand. The app covers the full ordering journey: onboarding, authentication, product discovery, drink customization, cart management, checkout, rewards, profile, and order tracking.
-
 ## Demo
 
-<video src="./public/CoffeeAppVideo.mp4" controls width="100%">
-  Your browser does not support the video tag. Watch the demo here: ./public/CoffeeAppVideo.mp4
+<video src="https://raw.githubusercontent.com/krushna-sahu1/coffee/main/public/CoffeeAppVideo.mp4" controls width="100%">
+  Your browser does not support the video tag. Watch the demo here: https://github.com/krushna-sahu1/coffee/blob/main/public/CoffeeAppVideo.mp4
 </video>
+
+**Demo video:** [CoffeeAppVideo.mp4](./public/CoffeeAppVideo.mp4)
+
+Clean, modern mobile coffee ordering app built with Expo, React Native, Expo Router, NativeWind, and Zustand. The app covers the full ordering journey: onboarding, authentication, product discovery, drink customization, cart management, checkout, rewards, profile, and order tracking.
 
 ## Highlights
 
