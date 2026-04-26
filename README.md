@@ -1,50 +1,138 @@
-# Welcome to your Expo app 👋
+# Coffee
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Clean, modern mobile coffee ordering app built with Expo, React Native, Expo Router, NativeWind, and Zustand. The app covers the full ordering journey: onboarding, authentication, product discovery, drink customization, cart management, checkout, rewards, profile, and order tracking.
 
-## Get started
+## Demo
 
-1. Install dependencies
+<video src="./public/CoffeeAppVideo.mp4" controls width="100%">
+  Your browser does not support the video tag. Watch the demo here: ./public/CoffeeAppVideo.mp4
+</video>
 
-   ```bash
-   npm install
-   ```
+## Highlights
 
-2. Start the app
+- Browse drinks and pastries by category
+- Switch between menu grid and list views
+- View featured products, popular items, and promotions
+- Customize product size and add-ons
+- Manage cart items, quantities, subtotal, tax, and total
+- Checkout with mock payment methods
+- Track order progress from confirmation to pickup
+- View rewards, tiers, points, and redeemable benefits
+- Persist cart, auth, onboarding, and order state locally
+- Smooth animated UI with React Native Reanimated and Moti
 
-   ```bash
-   npx expo start
-   ```
+## Tech Stack
 
-In the output, you'll find options to open the app in a
+| Area | Tools |
+| --- | --- |
+| App framework | Expo, React Native |
+| Routing | Expo Router |
+| Styling | NativeWind, Tailwind CSS |
+| State management | Zustand, AsyncStorage |
+| Forms and validation | React Hook Form, Zod |
+| UI and motion | Expo Vector Icons, Reanimated, Moti, Linear Gradient |
+| Language | JavaScript, TypeScript config |
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Getting Started
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Prerequisites
 
-## Get a fresh project
+- Node.js installed
+- Expo CLI available through `npx`
+- Android Studio, Xcode, or Expo Go for running the app
 
-When you're ready, run:
+### Installation
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+If you prefer Bun, this repository includes a `bun.lock` file:
 
-## Learn more
+```bash
+bun install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### Run The App
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm run start
+```
 
-## Join the community
+Then choose a target from the Expo terminal:
 
-Join our community of developers creating universal apps.
+- Press `a` for Android
+- Press `i` for iOS
+- Press `w` for web
+- Scan the QR code with Expo Go
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+You can also run a platform directly:
+
+```bash
+npm run android
+npm run ios
+npm run web
+```
+
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run start` | Start the Expo development server |
+| `npm run android` | Open the app on Android |
+| `npm run ios` | Open the app on iOS |
+| `npm run web` | Open the app in a browser |
+| `npm run lint` | Run Expo lint checks |
+
+## Project Structure
+
+```text
+coffee/
+|-- app/                  # Expo Router screens and layouts
+|   |-- (tabs)/           # Main tab navigation screens
+|   |-- order-tracking/   # Dynamic order tracking route
+|   `-- product/          # Dynamic product detail route
+|-- assets/               # App icons and image assets
+|-- components/ui/        # Reusable UI components
+|-- constants/            # Colors, mock data, and shared constants
+|-- lib/stores/           # Zustand stores
+|-- public/               # Static public assets, including demo video
+`-- global.css            # NativeWind global styles
+```
+
+## Core Screens
+
+- `app/onboarding.jsx` - first-run onboarding flow
+- `app/auth.jsx` - authentication screen
+- `app/(tabs)/index.jsx` - home, promotions, quick order, featured drinks
+- `app/(tabs)/menu.jsx` - categorized menu browsing
+- `app/product/[id].jsx` - product detail and customization
+- `app/cart.jsx` - cart review and quantity management
+- `app/checkout.jsx` - checkout and payment selection
+- `app/order-tracking/[id].jsx` - live-style order status
+- `app/(tabs)/rewards.jsx` - reward points and tiers
+- `app/(tabs)/profile.jsx` - user profile
+- `app/settings.jsx` - app settings
+
+## State Stores
+
+| Store | Purpose |
+| --- | --- |
+| `authStore` | User session and profile state |
+| `cartStore` | Cart items, quantities, subtotal, tax, and total |
+| `ordersStore` | Order history and tracking state |
+| `onboardingStore` | First-run onboarding completion |
+
+## Public Assets
+
+The project demo video lives at:
+
+```text
+public/CoffeeAppVideo.mp4
+```
+
+It is embedded near the top of this README and can also be opened directly from the repository.
+
+## License
+
+This project is private and currently does not include a license.
